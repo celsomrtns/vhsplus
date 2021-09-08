@@ -82,10 +82,6 @@ body {
     font-size: 2em;
 }
 
-.poster img {
-    border-radius: 20px;
-}
-
 .trailer {
     width: 100%;
     height: auto;
@@ -104,6 +100,47 @@ body {
     padding: 50px 20px;
     border-radius: 20px;
     margin: 10px 0;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+.socials ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.socials ul li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.socials ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 2em;
+    color: #000;
+}
+
+.shopee-logo {
+    width: 35px;
+    height: auto;
+    margin-top: -7px;
+}
+
+.youtube-logo {
+    color: #ff0000;
+}
+
+.instagram-logo {
+    color: #d2348a;
+}
+
+.tiktok-logo {
+    color: #000;
 }
 
 @media(max-width:640px) {
@@ -132,5 +169,8 @@ body {
     .destaque-fade {
         background: rgb(51, 51, 51);
         background: linear-gradient(0deg, rgba(51, 51, 51, 1) 0%, rgba(51, 51, 51, 0.6054796918767507) 50%);
+    }
+    .socials ul li a {
+        color: rgba(254, 187, 36, 1);
     }
 }
