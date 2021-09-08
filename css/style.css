@@ -1,0 +1,136 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f7efe2;
+    color: #000
+}
+
+.logo {
+    font-family: 'Notable', sans-serif;
+    padding: 20px 0;
+}
+
+.barras-01,
+.barras-02,
+.barras-03,
+.barras-04,
+.barras-05 {
+    width: 100%;
+    height: 10px;
+}
+
+.barras-01 {
+    background-color: #febb24;
+}
+
+.barras-02 {
+    background-color: #fd692d;
+}
+
+.barras-03 {
+    background-color: #fb2736;
+}
+
+.barras-04 {
+    background-color: #b81d3d;
+}
+
+.barras-05 {
+    background-color: #671e53;
+}
+
+.destaque {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+}
+
+.destaque-fade {
+    background: rgb(247, 239, 226);
+    background: linear-gradient(0deg, rgba(247, 239, 226, 1) 0%, rgba(247, 239, 226, 0.6054796918767507) 50%);
+    width: 100%;
+    height: 600px;
+}
+
+.page {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+}
+
+.content h1 {
+    font-size: 4em
+}
+
+.content small {
+    font-size: 1.5em;
+}
+
+.sinopse {
+    padding-top: 10px
+}
+
+.sinopse p {
+    font-size: 2em;
+}
+
+.poster img {
+    border-radius: 20px;
+}
+
+.trailer {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.trailer iframe {
+    border-radius: 20px;
+    width: 640px;
+    height: 480px;
+    display: block;
+    margin: auto;
+}
+
+.btn-strm {
+    padding: 50px 20px;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+@media(max-width:640px) {
+    .trailer iframe {
+        border-radius: 20px;
+        width: 100%;
+        height: 320px;
+    }
+    .content h1 {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    .content small {
+        font-size: .8em;
+    }
+    .sinopse p {
+        font-size: .8em;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+        color: rgba(254, 187, 36, 1);
+    }
+    .destaque-fade {
+        background: rgb(51, 51, 51);
+        background: linear-gradient(0deg, rgba(51, 51, 51, 1) 0%, rgba(51, 51, 51, 0.6054796918767507) 50%);
+    }
+}
