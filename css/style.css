@@ -143,6 +143,80 @@ footer {
     color: #000;
 }
 
+ul.streaming-btn {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-height: 120px;
+}
+
+.streaming-btn li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.streaming-btn li a {
+    display: block;
+    margin: 10px;
+}
+
+.streaming-btn img {
+    border-radius: 20px;
+    width: auto;
+    height: 80px;
+    transition: .2s;
+    border: 2px solid black;
+}
+
+.streaming-btn img:hover {
+    border: 2px solid red;
+    transition: .2s;
+}
+
+.prateleira {
+    background-color: #161616;
+    width: auto;
+    /*overflow-x: scroll;
+    overflow-y: hidden;*/
+    min-height: 540px;
+    background: url("../imgs/prateleira-bck.jpg") repeat;
+}
+
+.prateleira ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.prateleira ul li {
+    /*display: table-cell;*/
+    display: inline-block;
+    margin: 30px 0 20px 0;
+}
+
+.prateleira ul li a {
+    display: block;
+}
+
+.prateleira ul li:last-child {
+    transform: rotate(-2deg);
+    margin-left: 5px
+}
+
+.prateleira ul li a img {
+    width: auto;
+    height: 500px;
+    transition: .2s;
+}
+
+.prateleira ul li a img:hover {
+    filter: brightness(1.5);
+    /*transform: rotate(1deg);*/
+    transition: .2s;
+}
+
 @media(max-width:640px) {
     .trailer iframe {
         border-radius: 20px;
@@ -158,6 +232,23 @@ footer {
     }
     .sinopse p {
         font-size: .8em;
+    }
+    .streaming-btn img {
+        height: 60px;
+    }
+    .prateleira {
+        min-height: 270px;
+        background: url("../imgs/prateleira-bck-mobile.jpg") repeat;
+    }
+    .prateleira ul li {
+        /*display: table-cell;*/
+        display: inline-block;
+        margin: 20px 0;
+    }
+    .prateleira ul li a img {
+        width: auto;
+        height: 300px;
+        transition: .2s;
     }
 }
 
